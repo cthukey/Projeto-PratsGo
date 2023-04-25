@@ -1,0 +1,200 @@
+/*GLOBAL*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-image: url(../complementos/hd-wallpapers.png);
+
+    font-family: 'Roboto', sans-serif;
+    /* background-attachment: fixed; */
+
+}
+
+/*HEADER*/
+nav{
+    background: #1e2033;
+    color: rgb(255, 255, 255);
+    
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+
+    padding: 1.0rem 1.5rem;
+    height: 70px;
+}
+.h1{ 
+    color: #ffffff;
+   
+    font-size: 27px;
+
+    /* background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0)); */
+}
+span{
+    color: #048624;
+}
+.h2{
+    font-size: 17px;
+}
+a{
+    display: flex;
+    place-items: center;
+
+    color: rgb(255, 255, 255);
+
+    gap: 1rem;
+    text-decoration: none;
+
+    padding: 1.1rem;
+    border-radius: 4px;
+}
+nav a{
+    background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
+}
+nav a:hover{
+    background-image: linear-gradient(135deg,rgba(0, 38, 255, 0.25),rgba(255, 255, 255, 0));
+}
+
+/*IMAGE*/
+
+span{
+   margin-left: 80px; 
+   color: #ffffff;
+}
+#png{
+    background-repeat: no-repeat;
+    height: 444px;
+    display: flex;
+    place-items: center;
+}
+
+png ,input, button{
+    background-color: #ff1010;
+    padding: 10px;
+    width: 300px;
+    margin-top: 26%;
+    margin-left:39%;
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 16px;
+    box-shadow: 0 0 10px gray;
+}
+input:hover{
+    transition: 2s;
+    background-color: #640000;
+}
+
+/*SECTION*/
+
+.sectionFundo{
+   text-align: center;
+      
+}
+#titleIcones{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+
+    background-color: #7668cb;
+    color: white;
+
+    height: 66px;
+    padding: 0px 8px;
+}
+#titleIcones ul{
+    display: flex;
+    gap: 30px;
+
+}
+#titleIcones a{
+   padding: 0px 5px;
+}
+
+
+
+/* ARMAS */
+#conteinerArmas{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 8px;   
+    background-color: #080a19;
+    height: 330px;
+}
+#conteinerArmas .Facas,.AWP,.Pistolas,.Smg,.Escopetas,.Rifles{
+   background-color: #048624;
+   height: 266px;
+   margin-top: 25px;
+}
+
+
+/* CONTEINER-CAIXAS */
+.conteinerCaixas{
+    text-align: center;
+    background-color: #080a19;
+}
+.conteinerCaixas .caixa1,.caixa2,.caixa4,.caixa5,.caixa5{
+    margin: 12px;
+}
+
+
+/*INF-PAGINA*/
+.infPagina{
+    background-color: #080a19;
+    color: #ffffff;
+    display: grid;
+    height: 440px;
+    text-align: center;
+}
+.infPagina h2{
+    align-self: center;
+}
+
+/*FOOTER*/  
+.rodape{
+    background-color: #000000;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.p1{
+    text-align: center;  
+    color: #ffffff;
+}
+
+
+ul{
+    list-style: none;
+    font-weight: bolder;
+    
+}
+ul,li{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+/* #patrocinio{
+    background-color: #7668cb;
+} */
+
+#patrocinio .imports{
+    display: flex;
+    place-content: center;
+}
+
+
+
+
+    
+
