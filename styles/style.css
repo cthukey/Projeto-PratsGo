@@ -42,7 +42,8 @@ span{
 .h2{
     font-size: 17px;
 }
-a{
+nav a{
+    cursor: pointer;
     display: flex;
     place-items: center;
 
@@ -53,6 +54,7 @@ a{
 
     padding: 1.1rem;
     border-radius: 4px;
+    
 }
 nav a{
     background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
@@ -72,24 +74,6 @@ span{
     height: 444px;
     display: flex;
     place-items: center;
-}
-
-png ,input, button{
-    background-color: #ff1010;
-    padding: 10px;
-    width: 300px;
-    margin-top: 26%;
-    margin-left:39%;
-    cursor: pointer;
-    border: none;
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    font-size: 16px;
-    box-shadow: 0 0 10px gray;
-}
-input:hover{
-    transition: 2s;
-    background-color: #640000;
 }
 
 /*SECTION*/
@@ -183,18 +167,38 @@ ul,li{
     color: #ffffff;
 }
 
-
-/* #patrocinio{
-    background-color: #7668cb;
-} */
-
 #patrocinio .imports{
     display: flex;
     place-content: center;
 }
 
 
+/* UPGRADE */
 
+.screen2.open{
+    opacity: 1;
+    visibility: visible;
+}
 
+.screen2{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: grid;
+    place-content: center;
     
+    opacity: 0;
+    visibility: hidden;
+
+}
+.modal{
+    padding: 30px;
+    background: rgb(245, 245, 245);
+    width: 35.8rem;
+}
+
+.modal .btnClose{
+    width: 24px;
+    
+}
 

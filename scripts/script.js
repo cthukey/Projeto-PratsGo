@@ -1,1 +1,0 @@
-alert('inscreva-se na newsletter e receba ENORMES códigos promocionais todos os dias')
