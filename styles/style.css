@@ -13,8 +13,6 @@ body{
     background-image: url(../complementos/hd-wallpapers.png);
 
     font-family: 'Roboto', sans-serif;
-    /* background-attachment: fixed; */
-
 }
 
 /*HEADER*/
@@ -29,20 +27,8 @@ nav{
     padding: 1.0rem 1.5rem;
     height: 70px;
 }
-.h1{ 
-    color: #ffffff;
-   
-    font-size: 27px;
-
-    /* background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0)); */
-}
-span{
-    color: #048624;
-}
-.h2{
-    font-size: 17px;
-}
 nav a{
+    background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
     cursor: pointer;
     display: flex;
     place-items: center;
@@ -56,16 +42,13 @@ nav a{
     border-radius: 4px;
     
 }
-nav a{
-    background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
-}
 nav a:hover{
     background-image: linear-gradient(135deg,rgba(0, 38, 255, 0.25),rgba(255, 255, 255, 0));
 }
 
 /*IMAGE*/
 
-span{
+#png span{
    margin-left: 80px; 
    color: #ffffff;
 }
@@ -78,10 +61,6 @@ span{
 
 /*SECTION*/
 
-.sectionFundo{
-   text-align: center;
-      
-}
 #titleIcones{
     display: flex;
     justify-content: space-between;
@@ -99,7 +78,14 @@ span{
 
 }
 #titleIcones a{
-   padding: 0px 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+    display: flex;
+    place-items: center;
+    color: rgb(255, 255, 255);
+    gap: 1rem;
+    text-decoration: none;
+    list-style: none;
 }
 
 
@@ -143,37 +129,24 @@ span{
 }
 
 /*FOOTER*/  
-.rodape{
-    background-color: #000000;
-    height: 45vh;
+footer .rodape{
+    background-color: #272626;
+    height: 43vh;
     display: flex;
-    justify-content: space-between;
     
 }
-.p1{
-    text-align: center;  
-    color: #ffffff;
+#sobreContato{
+    background-color: white;
+    padding: 6px;
+}
+#patrocinio{
+    background-color: #048624;
+    display: grid;
+    text-align: center;
 }
 
 
-ul{
-    list-style: none;
-    font-weight: bolder;
-    
-}
-ul,li{
-    text-decoration: none;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-#patrocinio .imports{
-    display: flex;
-    place-content: center;
-}
-
-
-/* UPGRADE */
+/* UPGRADE MODAL*/
 
 .screen2.open{
     opacity: 1;
@@ -189,16 +162,10 @@ ul,li{
     
     opacity: 0;
     visibility: hidden;
-
 }
 .modal{
     padding: 30px;
     background: rgb(245, 245, 245);
     width: 35.8rem;
-}
-
-.modal .btnClose{
-    width: 24px;
-    
 }
 
