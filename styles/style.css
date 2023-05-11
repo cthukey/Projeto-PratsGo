@@ -130,19 +130,28 @@ nav a:hover{
 
 /*FOOTER*/  
 footer .rodape{
-    background-color: #272626;
+    background-color: #000000;
     height: 43vh;
     display: flex;
-    
+    justify-content: space-between;
 }
 #sobreContato{
-    background-color: white;
     padding: 6px;
+    width: 150px;
 }
+#sobreContato a{
+    color:white;
+    text-decoration: none;
+}
+
 #patrocinio{
-    background-color: #048624;
+    color: white;
     display: grid;
     text-align: center;
+    width: 400px;
+}
+#patrocinio ul{
+    list-style: none;
 }
 
 
@@ -156,7 +165,10 @@ footer .rodape{
 .screen2{
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.7);
+    
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
     display: grid;
     place-content: center;
     
@@ -165,7 +177,27 @@ footer .rodape{
 }
 .modal{
     padding: 30px;
-    background: rgb(245, 245, 245);
-    width: 35.8rem;
+
+    background-color: #080a19;
+    color: white;
+    width: 59.8rem;
+    height: 30rem;
+
+    border: solid 3px black;
+    border-radius: 4px;
+    /* background-color: transparent;
+    backdrop-filter: blur(5px); */
+
+    display: grid;
+    place-content: center;
+
+    
 }
 
+.modal .imgModal{
+    position: absolute;
+}
+
+.modal button{
+    cursor: pointer;
+}
