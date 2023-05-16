@@ -16,6 +16,8 @@ body{
 }
 
 /*HEADER*/
+
+
 nav{
     background: #1e2033;
     color: rgb(255, 255, 255);
@@ -152,6 +154,31 @@ footer .rodape{
 }
 #patrocinio ul{
     list-style: none;
+}
+
+@media(max-width:768px){
+    nav p{
+        display: none;
+    }
+    #png span{
+        display: none;
+    }
+    #png{
+        display: grid;
+        place-content: center;
+    }
+    .sectionFundo #titleIcones{
+        display: grid;
+        height: 140px;
+        place-content: center;
+    }
+    .sectionFundo #titleIcones .loginSteam{
+        margin-top:1rem;
+    }
+    .sectionFundo #conteinerArmas {
+        visibility: hidden;
+        display: none;
+    }
 }
 
 
