@@ -8,17 +8,19 @@
 :root{
     font-size: 62.5%;
 }
+
 body{
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     background-image: url(../complementos/hd-wallpapers.png);
 
     font-family: 'Roboto', sans-serif;
-}
+} 
 
 /*HEADER*/
 
 
-nav{
+header{
+    width: 100vw;
     background: #1e2033;
     color: rgb(255, 255, 255);
     
@@ -28,8 +30,8 @@ nav{
 
     padding: 1.0rem 1.5rem;
     height: 70px;
-}
-nav a{
+} 
+header a{
     background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
     cursor: pointer;
     display: flex;
@@ -42,11 +44,12 @@ nav a{
 
     padding: 1.1rem;
     border-radius: 4px;
+    margin-right: 1.5rem;
     
 }
-nav a:hover{
+header a:hover{
     background-image: linear-gradient(135deg,rgba(0, 38, 255, 0.25),rgba(255, 255, 255, 0));
-}
+} */
 
 /*IMAGE*/
 
@@ -62,7 +65,9 @@ nav a:hover{
 }
 
 /*SECTION*/
-
+.sectionFundo{
+    display: grid;
+}
 #titleIcones{
     display: flex;
     justify-content: space-between;
@@ -92,19 +97,16 @@ nav a:hover{
 
 
 
-/* ARMAS */
-#conteinerArmas{
-    display: flex;
-    justify-content: center;
+/* ARMAS*/
+#conteinerArmas ul{
     gap: 30px;
     padding: 8px;   
     background-color: #080a19;
-    height: 330px;
+    text-align: center;
 }
-#conteinerArmas .Facas,.AWP,.Pistolas,.Smg,.Escopetas,.Rifles{
-   background-color: #048624;
-   height: 266px;
-   margin-top: 25px;
+#conteinerArmas ul li{
+    display: inline-flex;
+    margin: 0px 8px;
 }
 
 
@@ -228,3 +230,4 @@ footer .rodape{
 .modal button{
     cursor: pointer;
 }
+
