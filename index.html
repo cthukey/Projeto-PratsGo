@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,21 +16,26 @@
 </head>
 <body>
     <main>
-        <!-- <div class="screen2">
+        <div class="screen2">
             <div class="modal card">
-                <img class="imgModal" src="/complementos/prats.png" alt="" width="64px">
+                <!-- <img src="/complementos/prats.png" alt="" width="64px"> -->
                 
-                <img src="./complementos/caixaCS-GO-png.png" alt="" width="270px">
+                <img class="iconeGerado" src="./complementos/caixaCS-GO-png.png" alt="" width="270px">
 
-                <button>GO</button>
+                <button class="btnDestrancar">DESTRANCAR</button>
             </div>
-        </div> -->
-        
+        </div>
 
+        <div class="screen3">
+            <img src="./complementos/faca_csgo.jpg" alt="" width="270px">
+
+            <button id="closeModal">bonus</button>
+        </div>
+        
         <header>
-            <img src="./complementos/miniLogo_prats.go" alt="" width="150px">
+            <img class="miniLogo" src="./complementos/miniLogo_prats.go" alt="" width="150px">
             <p class="h2">Sorteio de premios do Prata ao Global</p>
-            <a href="/upgrade" onclick="btnUpgrade()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgBtVU7UgJBEO3ZE5ibDDfARMlYTqAGxsAJ4Aa7nkBv4BJjFXKC1cwygRuAgRJKaMTYzfZWNVszzgylr+rVwPTnTffs9gJEwBhzgtTwH8DEV8gVcwx/BUyWIktTgdYH/k1CfTgW3I57TvaFHAnbgAUMC2qIAQbknJSQkZjDbyyE7rxC3I6VaIcOOIwOahsaCuHUhUiw0IJzLGwOpdVw6JPKu3D4zOiQ9f+kYd/C76DyfY/oQY4EAsH3MUBqE/F4Jp6kI1HySpgKvqvS1zJfBXOkZjZR78/hWAGl1BqXHnJpMe9t7HOcAIvQpT1ZTEtH8hcWDxNgtHndiuA22A9UIHuxAhqZI1sY3OLf4BohVvATUTpsOmSvs5mmzT1ZAZWf2qajrdfNvc7HFAekKs9xdQkMoSp9gKSZkkMg9smVylg4kyKq6cynz1hoTaIYNHEm38z0Dnb9KhnOKlDP+5N/J5PX1vXaFUdC3ZjRTVVcfD6aZosUeEBfL6gq0sgC+Y68xKrOZPK6RRxz+3Z6kwcJcIDGhWZOPUnpxRvSSyhbJOFtkUso9mP0AygZftvRdDFyAAAAAElFTkSuQmCC" alt="">UPGRADE</a>
+            <a class="btnUp" href="/upgrade" onclick="btnUpgrade()"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgBtVU7UgJBEO3ZE5ibDDfARMlYTqAGxsAJ4Aa7nkBv4BJjFXKC1cwygRuAgRJKaMTYzfZWNVszzgylr+rVwPTnTffs9gJEwBhzgtTwH8DEV8gVcwx/BUyWIktTgdYH/k1CfTgW3I57TvaFHAnbgAUMC2qIAQbknJSQkZjDbyyE7rxC3I6VaIcOOIwOahsaCuHUhUiw0IJzLGwOpdVw6JPKu3D4zOiQ9f+kYd/C76DyfY/oQY4EAsH3MUBqE/F4Jp6kI1HySpgKvqvS1zJfBXOkZjZR78/hWAGl1BqXHnJpMe9t7HOcAIvQpT1ZTEtH8hcWDxNgtHndiuA22A9UIHuxAhqZI1sY3OLf4BohVvATUTpsOmSvs5mmzT1ZAZWf2qajrdfNvc7HFAekKs9xdQkMoSp9gKSZkkMg9smVylg4kyKq6cynz1hoTaIYNHEm38z0Dnb9KhnOKlDP+5N/J5PX1vXaFUdC3ZjRTVVcfD6aZosUeEBfL6gq0sgC+Y68xKrOZPK6RRxz+3Z6kwcJcIDGhWZOPUnpxRvSSyhbJOFtkUso9mP0AygZftvRdDFyAAAAAElFTkSuQmCC" alt="">UPGRADE</a>
         </header>
         
         <div id="png">
@@ -50,7 +56,7 @@
         <section class="sectionFundo">
 
             <div id="titleIcones">
-                <!-- <img src="./complementos/iconCs.svg" alt="" width="64px"> -->
+                <img src="./complementos/iconCs.svg" alt="" width="64px">
                 <ul>
                     <a href="#"><li>CAIXAS</li></a>
                     <a href="#"><li>APRIMORAMENTO</li></a>
@@ -122,5 +128,9 @@
 
     
 <script src="./scripts/index.js"></script>
+<script type="text/javascript" src="./scripts/vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".btnDestrancar"));
+</script>
 </body>
 </html>

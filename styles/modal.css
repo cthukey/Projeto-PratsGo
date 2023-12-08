@@ -1,0 +1,76 @@
+/* UPGRADE MODAL*/
+
+.screen2.open{
+    opacity: 1;
+    visibility: visible;
+}
+.screen2{
+    position: absolute;
+    inset: 0;
+    
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
+    display: grid;
+    place-content: center;
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    /* padding: 10px; */
+
+    background-color: #080a19;
+    color: white;
+    width: 1.1rem;
+    height: 1.1rem;
+
+    /* border: solid 3px rgb(134, 134, 134); */
+    border-radius: 4px;
+    /* background-color: transparent;
+    backdrop-filter: blur(5px); */
+
+    display: grid;
+    place-content: center; 
+}
+.modal .imgModal{
+    position: absolute;
+}
+.modal button{
+    cursor: pointer;
+    background-color: #473d80;
+    border: none;
+    border-radius: 6px;
+    height: 38px;
+    padding: 0 12px;
+    color: white;
+    font-weight: bold;
+}
+.modal button:hover{
+    background-color: #816eeb;
+}
+.iconeGerado{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.iconeGerado:hover{
+    -webkit-transform: scale(1.5);
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    transform: scale(1.5);
+}
+
+/* SCREEN3 */
+.screen3.open{
+    opacity: 1;
+    visibility: visible;
+}
+.screen3{
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    place-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+}

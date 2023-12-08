@@ -23,7 +23,6 @@ body{
 
 /*HEADER*/
 
-
 header{
     /* width: 100vw; */
     background: #1e2033;
@@ -36,6 +35,15 @@ header{
     padding: 1.0rem 1.5rem;
     height: 70px;
 } 
+header .miniLogo{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+header .miniLogo:hover{
+    -webkit-transform: scale(1.5);
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    transform: scale(1.5);
+}
 header a{
     background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
     cursor: pointer;
@@ -47,7 +55,7 @@ header a{
     gap: 1rem;
     text-decoration: none;
 
-    padding: 1.1rem;
+    padding: 1.0rem;
     border-radius: 4px;
     margin-right: 1.5rem;
     
@@ -64,7 +72,7 @@ header a:hover{
 }
 #png{
     background-repeat: no-repeat;
-    height: 444px;
+    /* height: 444px; */
     display: flex;
     place-items: center;
 }
@@ -90,16 +98,23 @@ header a:hover{
 
 }
 #titleIcones a{
-    padding: 0px 5px;
+    padding: 0px 8px;
     cursor: pointer;
     display: flex;
     place-items: center;
-    color: rgb(255, 255, 255);
+    color: #b0a4fc;
     gap: 1rem;
     text-decoration: none;
     list-style: none;
-}
 
+    transition: all 0.5s;
+}
+#titleIcones a:hover{
+    color: white;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+
+}
 
 
 /* ARMAS*/
@@ -213,52 +228,10 @@ footer .rodape{
     .iconPrats img{
         width: 280px;
     }
+    header a{
+        padding: 0.6rem;
+    }
 }
 
-/* UPGRADE MODAL*/
 
-.screen2.open{
-    opacity: 1;
-    visibility: visible;
-}
-
-.screen2{
-    position: absolute;
-    inset: 0;
-    
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-
-    display: grid;
-    place-content: center;
-    
-    opacity: 0;
-    visibility: hidden;
-}
-.modal{
-    padding: 30px;
-
-    background-color: #080a19;
-    color: white;
-    width: 59.8rem;
-    height: 30rem;
-
-    border: solid 3px black;
-    border-radius: 4px;
-    /* background-color: transparent;
-    backdrop-filter: blur(5px); */
-
-    display: grid;
-    place-content: center;
-
-    
-}
-
-.modal .imgModal{
-    position: absolute;
-}
-
-.modal button{
-    cursor: pointer;
-}
 
