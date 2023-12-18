@@ -16,7 +16,9 @@ body{
 
     font-size: 1.25rem;
     line-height: 1.6;
-    background-image: url(../complementos/hd-wallpapers.png);
+    background-image: url(../image\ \(1\).png);
+    background-repeat: no-repeat;
+
 
     font-family: 'Roboto', sans-serif;
 } 
@@ -116,18 +118,47 @@ header a:hover{
 
 }
 
+/* title_category */
+
+.title_category{
+    color: white;
+    background-color: #0a0d1d;
+    background-image: url(https://csgo.net/public/video/blue_header.webp?v=2);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    /* font-family: 'Russo One', sans-serif; */
+    font-size: 16px;
+    
+}
 
 /* ARMAS*/
-#conteinerArmas ul{
-    gap: 30px;
-    padding: 8px;   
+#conteinerArmas{
     background-color: #080a19;
-    text-align: center;
 }
-#conteinerArmas ul li{
+#conteinerArmas ul{
+    padding: 3px;   
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skin-covert li{
+    list-style: none;
+}
+.skin-covert{
+    cursor: pointer;
+    background: radial-gradient(50% 50% at 50% 50%,#383f5e 0,#1e2339 100%);
+    border: 2px solid #383f5e;
+    padding: 10px;
+
+    display: inline-flex;
+    align-items: center;
+}
+/* #conteinerArmas ul li{
     display: inline-flex;
     margin: 0px 8px;
-}
+} */
 
 
 /* CONTEINER-CAIXAS */
@@ -200,6 +231,10 @@ footer .rodape{
     }
     .sectionFundo #titleIcones .loginSteam{
         margin-top:1rem;
+    }
+    .sectionFundo .title_category{
+        visibility: hidden;
+        display: none;
     }
     .sectionFundo #conteinerArmas {
         visibility: hidden;

@@ -20,7 +20,6 @@
 .modal{
     /* padding: 10px; */
 
-    background-color: #080a19;
     color: white;
     width: 1.1rem;
     height: 1.1rem;
@@ -59,6 +58,8 @@
     transform: scale(1.5);
 }
 
+
+
 /* SCREEN3 */
 .screen3.open{
     opacity: 1;
@@ -71,6 +72,12 @@
     display: grid;
     place-items: center;
 
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
     opacity: 0;
     visibility: hidden;
+}
+#closeModal{
+    margin-top: 80px;
 }
