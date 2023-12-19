@@ -1,5 +1,7 @@
 /* UPGRADE MODAL*/
-
+body .screen2{
+    overflow: hidden;
+}
 .screen2.open{
     opacity: 1;
     visibility: visible;
@@ -19,7 +21,6 @@
 }
 .modal{
     /* padding: 10px; */
-
     color: white;
     width: 1.1rem;
     height: 1.1rem;
@@ -31,6 +32,7 @@
 
     display: grid;
     place-content: center; 
+    
 }
 .modal .imgModal{
     position: absolute;

@@ -13,13 +13,12 @@ body{
     min-height: 100vh;
     flex-direction: column;
 
-
     font-size: 1.25rem;
     line-height: 1.6;
-    background-image: url(../image\ \(1\).png);
+    background-image: url(../complementos/capaccccs.jpg);
     background-repeat: no-repeat;
-
-
+    background-position: bottom 980px right;
+    
     font-family: 'Roboto', sans-serif;
 } 
 
@@ -214,9 +213,9 @@ footer .rodape{
 }
 
 @media(max-width:768px){
-    nav p{
+    /* nav p{
         display: none;
-    }
+    } */
     #png span{
         display: none;
     }
@@ -243,6 +242,13 @@ footer .rodape{
 }
 
 @media(max-width:540px){
+    body{
+        background-position: top;
+        background-image: url(../complementos/capaccccs.mini540.jpg);
+        
+        background-color: transparent;
+        /* backdrop-filter: blur(5px); */
+    }
     header p{
         display: none;
     }
@@ -260,6 +266,13 @@ footer .rodape{
 }
 
 @media(max-width:400px){
+    body{
+        background-image: url(../complementos/capaccccs.mini400.jpg);
+        background-position: top;
+
+        background-color: transparent;
+        /* backdrop-filter: blur(5px); */
+    }
     .iconPrats img{
         width: 280px;
     }
