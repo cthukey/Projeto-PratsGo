@@ -36,15 +36,18 @@ header{
     padding: 1.0rem 1.5rem;
     height: 70px;
 } 
+
 header .miniLogo{
-    transition: all 0.5s;
-    cursor: pointer;
+    transition: all .5s;
 }
 header .miniLogo:hover{
-    -webkit-transform: scale(1.5);
-    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-    transform: scale(1.5);
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
 }
+
 header a{
     background-image: linear-gradient(135deg,rgba(44,151,222,.25),rgba(44,151,222,0));
     cursor: pointer;
@@ -59,17 +62,22 @@ header a{
     padding: 1.0rem;
     border-radius: 4px;
     margin-right: 1.5rem;
-    
 }
 header a:hover{
     background-image: linear-gradient(135deg,rgba(0, 38, 255, 0.25),rgba(255, 255, 255, 0));
-} */
+} 
+
 
 /*IMAGE*/
 
 #png span{
    margin-left: 80px; 
    color: #ffffff;
+}
+.iconPrats .gorro{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 30px;
 }
 #png{
     background-repeat: no-repeat;

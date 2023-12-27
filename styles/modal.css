@@ -80,6 +80,15 @@ body .screen2{
     opacity: 0;
     visibility: hidden;
 }
+#imgGerado{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#imgGerado:hover{
+    -webkit-transform: scale(1.5);
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    transform: scale(1.5);
+}
 #closeModal{
     margin-top: 80px;
 }
